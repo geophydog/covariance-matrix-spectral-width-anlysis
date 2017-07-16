@@ -1,3 +1,8 @@
+/*--------------------------------------------*
+ *    Initially coded by Xuping Feng @NJU     *
+ *    2017-7-15                               *
+ *--------------------------------------------*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -153,8 +158,6 @@ int main (int argc, char *argv[]) {
         }
         fre += fre_step;
     }
-
-    printf("EIGENVALUES FOUND FINISHING!!!\n");
 
     fclose(fout); fftw_free(in); fftw_free(out);
     gsl_vector_free(eval); gsl_eigen_herm_free(w); gsl_matrix_complex_free(cov);
