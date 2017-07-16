@@ -149,7 +149,7 @@ int main (int argc, char *argv[]) {
             tmp1 = 0.; tmp2 = 0.;
             for ( m = 0; m < count; m ++ ) {
                 double eval_m = gsl_vector_get(eval, m);
-                printf("eigenvalue %d : %g\n", m+1, eval_m);
+                //printf("eigenvalue %d : %g\n", m+1, eval_m);
                 tmp1 += (m*eval_m); tmp2 += eval_m;
             }
             //printf("tmp1: %g  tmp2: %g\n", tmp1, tmp2);
@@ -174,6 +174,6 @@ int main (int argc, char *argv[]) {
     }
     free(tmp);
     time_end = clock();
-    printf("TIme used: %g seconds!!!\n", (time_end-time_start)/CLOCKS_PER_SEC);
+    printf("Time used: %g seconds!!!\n", (time_end-time_start)/CLOCKS_PER_SEC);
     return 0;
 }
