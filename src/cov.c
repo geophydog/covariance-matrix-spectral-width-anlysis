@@ -1,6 +1,7 @@
 /*--------------------------------------------*
  *    Initially coded by Xuping Feng @NJU     *
  *    2017-7-15                               *
+ *    GSL header files should be ready        *
  *--------------------------------------------*/
 
 #include <stdio.h>
